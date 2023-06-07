@@ -26,7 +26,6 @@ namespace EasyMicroservices.SMSMicroservice.WebApi
             builder.Services.AddSwaggerGen();
             builder.Services.AddScoped((serviceProvider) => new DependencyManager().GetContractLogic<TextMessageEntity, SingleTextMessageRequestContract, TextMessageContract>());
             builder.Services.AddHttpContextAccessor();
-            //builder.Services.AddDbContext<SMSContext>(options => new DatabaseBuilder().OnConfiguring(options));
             builder.Services.AddScoped<IDatabaseBuilder>(serviceProvider => new DatabaseBuilder());
 
             var app = builder.Build();
