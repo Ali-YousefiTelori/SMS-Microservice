@@ -6,9 +6,12 @@ using EasyMicroservices.SMSMicroservice.Database;
 using EasyMicroservices.SMSMicroservice.Database.Contexts;
 using EasyMicroservices.SMSMicroservice.Database.Entities;
 using EasyMicroservices.SMSMicroservice.Interfaces;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using System.Threading.Tasks;
 
 namespace EasyMicroservices.SMSMicroservice.WebApi
 {
